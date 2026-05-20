@@ -10,10 +10,13 @@ function calcular() {
     } else {
         resultado = jurosSimples(capital, taxa, tempo)
     }
-
-    document.getElementById("resultado").textContent = "Resultado: R$ " + resultado.toFixed(2)
+    if (resultado <= 0){
+        document.getElementById("resultado").textContent = "BSJOBSJO " 
+    }
+    else{
+        document.getElementById("resultado").textContent = "Resultado: R$ " + resultado.toFixed(2)
+    }
 }
-
 function jurosCompostos(capital, taxa, tempo) {
     return capital * (1 + taxa) ** tempo  
 }
