@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="calcJC.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <h2>Calculadora de juros</h2>
+
+
+
+
+
+
+
+        <div id="formulario">
+            <form action="">
+                <div class="borda">
+                    <label for="">Capital</label><br>
+                    <input type="number" id="capital"><br>
+                </div>
+                <div class="borda">
+                    <label for="">Taxa</label>
+                    <input type="number" id="taxa"><br>
+                </div>
+                <div class="borda">
+                    <label for="">Tempo</label>
+                    <input type="number" id="tempo"><br>
+                </div>
+
+                <select name="juros" id="juros">
+                    <option value="composto">Juros Compostos</option>
+                    <option value="simples">Juros Simples</option>
+                </select>
+
+                <p id="resultado"></p>
+
+
+                <button type="button" onclick="calcular()">Enviar</button>
+
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
