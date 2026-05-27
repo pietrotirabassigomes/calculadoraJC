@@ -4,28 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Juros</title>
     <script src="calcJC.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <div id="container">
-        <h2>Calculadora de juros</h2>
-        
+        <h2>Calculadora de Juros</h2>
+        <p class="subtitulo">Simples e Compostos</p>
+
         <div id="formulario">
             <form action="">
                 <div class="borda">
-                    <label for="">Capital</label>
-                    <input type="number" id="capital"><br>
+                    <label for="capital">Capital</label>
+                    <input type="number" id="capital" placeholder="R$ 0,00"><br>
                 </div>
                 <div class="borda">
-                    <label for="">Taxa</label>
-                    <input type="number" id="taxa" placeholder="Em meses"><br>
+                    <label for="taxa">Taxa</label>
+                    <input type="number" id="taxa" placeholder="Em % ao mês"><br>
                 </div>
                 <div class="borda">
-                    <label for="">Tempo</label>
+                    <label for="tempo">Tempo</label>
                     <input type="number" id="tempo" placeholder="Em meses"><br>
                 </div>
 
@@ -35,14 +35,9 @@
                 </select>
 
                 <p id="resultado"></p>
-                
 
-
-                <button type="button" onclick="calcular()">Enviar</button>
-                <button id="botaored" type="button" onclick="limparCalculo()">Novo calculo</button>
-
-
-
+                <button type="button" onclick="calcular()">Calcular</button>
+                <button id="botaored" type="button" onclick="limparCalculo()">Novo cálculo</button>
             </form>
         </div>
     </div>
