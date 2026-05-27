@@ -10,18 +10,25 @@ function calcular() {
     } else {
         resultado = jurosSimples(capital, taxa, tempo)
     }
-    if (resultado <= 0){
-        document.getElementById("resultado").textContent = "BSJOBSJO " 
+    if (resultado <= 0) {
+        document.getElementById("resultado").textContent = "Digite apenas numeros validos."
     }
-    else{
+    else {
         document.getElementById("resultado").textContent = "Resultado: R$ " + resultado.toFixed(2)
     }
 }
 function jurosCompostos(capital, taxa, tempo) {
-    return capital * (1 + taxa) ** tempo  
+    return capital * (1 + taxa) ** tempo
 }
 
 function jurosSimples(capital, taxa, tempo) {
     const juros = capital * taxa * tempo
     return capital + juros
+}
+function limparCalculo() { 
+  document.getElementById("capital").value = ""; 
+  document.getElementById("taxa").value = ""; 
+  document.getElementById("tempo").value = ""; 
+  document.getElementById("resultado").textContent = "";
+
 }
