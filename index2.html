@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Juros</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <h1>Juros Simples vs. Juros Compostos</h1>
+    <p>A principal diferença entre eles é a base de cálculo onde a taxa de juros é aplicada a cada mês ou ano.</p>
+
+    <h2>1. Juros Simples (Crescimento Linear)</h2>
+    <p>O juro é calculado apenas sobre o valor inicial (o capital principal). O valor do rendimento é fixo em todos os
+        períodos.</p>
+    <ul>
+        <li><strong>Como funciona:</strong> Não importa quantos anos passem, o rendimento não muda.</li>
+        <li><strong>Fórmula:</strong> J = C &times; i &times; t (Juros = Capital &times; Taxa &times; Tempo).</li>
+        <li><strong>Exemplo Prático:</strong> Você investe R$ 1.000 com taxa de 10% ao ano.
+            <ul>
+                <li>Ano 1: Ganha R$ 100 ➔ Total: R$ 1.100</li>
+                <li>Ano 2: Ganha R$ 100 ➔ Total: R$ 1.200</li>
+                <li>Ano 3: Ganha R$ 100 ➔ Total: R$ 1.300</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>2. Juros Compostos (Crescimento Exponencial)</h2>
+    <p>O juro é calculado sobre o valor do período anterior, que já inclui os juros acumulados. É o efeito "juros sobre
+        juros" ou "bola de neve".</p>
+    <ul>
+        <li><strong>Como funciona:</strong> O seu dinheiro trabalha para você. Os juros rendem novos juros.</li>
+        <li><strong>Fórmula:</strong> M = C &times; (1 + i)<sup>t</sup> (Montante = Capital &times; (1 +
+            Taxa)<sup>Tempo</sup>).</li>
+        <li><strong>Exemplo Prático:</strong> Você investe os mesmos R$ 1.000 a 10% ao ano.
+            <ul>
+                <li>Ano 1: Ganha R$ 100 (10% de R$ 1.000) ➔ Total: R$ 1.100</li>
+                <li>Ano 2: Ganha R$ 110 (10% de R$ 1.100) ➔ Total: R$ 1.210</li>
+                <li>Ano 3: Ganha R$ 121 (10% de R$ 1.210) ➔ Total: R$ 1.331</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Resumo da Diferença</h2>
+    <ul>
+        <li><strong>Juros Simples:</strong> Bom para empréstimos curtos entre amigos ou parcelamentos sem juros em
+            lojas.</li>
+        <li><strong>Juros Compostos:</strong> É a base do sistema financeiro. É excelente para quem investe no longo
+            prazo e perigoso para quem acumula dívidas no cartão de crédito.</li>
+    </ul>
+
+</body>
+
+</html>

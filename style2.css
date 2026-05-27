@@ -1,0 +1,35 @@
+/* Estilos básicos de página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333333;
+    background-color: #f9f9f9;
+}
+
+/* Títulos */
+h1 {
+    color: #1a365d;
+    border-bottom: 2px solid #1a365d;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #2c5282;
+    margin-top: 30px;
+}
+
+/* Listas e destaques */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+strong {
+    color: #1a202c;
+}
