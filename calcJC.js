@@ -7,14 +7,19 @@ function calcular() {
     let resultado
     if (tipo === "composto") {
         resultado = jurosCompostos(capital, taxa, tempo)
+        if (resultado <= 0) {
+            document.getElementById("resultado").textContent = "Digite apenas numeros validos."
+        } else {
+            document.getElementById("resultado").textContent = "Resultado: R$ " + resultado.toFixed(2)
+        }
     } else {
         resultado = jurosSimples(capital, taxa, tempo)
-    }
-    if (resultado <= 0) {
-        document.getElementById("resultado").textContent = "Digite apenas numeros validos."
-    }
-    else {
-        document.getElementById("resultado").textContent = "Resultado: R$ " + resultado.toFixed(2)
+        if (resultado <= 0) {
+            document.getElementById("resultado").textContent = "Digite apenas numeros validos."
+        } else {
+            const juros = resultado - capital
+            document.getElementById("resultado").textContent = "Juros: R$ " + juros.toFixed(2) + " | Montante: R$ " + resultado.toFixed(2)
+        }
     }
 }
 function jurosCompostos(capital, taxa, tempo) {
