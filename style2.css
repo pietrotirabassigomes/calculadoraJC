@@ -1,4 +1,4 @@
-/* Estilos básicos de página */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -9,7 +9,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Títulos */
+
 h1 {
     color: #1a365d;
     border-bottom: 2px solid #1a365d;
@@ -21,7 +21,7 @@ h2 {
     margin-top: 30px;
 }
 
-/* Listas e destaques */
+
 ul {
     padding-left: 20px;
 }
@@ -32,4 +32,39 @@ li {
 
 strong {
     color: #1a202c;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        margin: 20px auto;
+        padding: 0 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p,
+    li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    body {
+        padding: 0 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
 }
